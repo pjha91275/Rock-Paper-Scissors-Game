@@ -14,9 +14,8 @@ const genCompChoice = () =>{
 };
 
 const drawGame = ()=>{
-    console.log("game was draw.");
     msg.innerText = "Game was Draw. Play again.";
-    msg.style.backgroundColor = "#081b31";
+    msg.style.backgroundColor = "orange";
 };
 
 const showWinner = (userWin, userChoice , compChoice)=>{
@@ -35,10 +34,8 @@ const showWinner = (userWin, userChoice , compChoice)=>{
 }
 
 const playGame = (userChoice) =>{
-    console.log("user choice = ",userChoice);
     //Generate computer choice
     const compChoice = genCompChoice();
-    console.log("comp choice = ", compChoice);
 
     if(userChoice ===  compChoice){
         drawGame();
