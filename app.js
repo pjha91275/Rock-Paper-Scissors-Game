@@ -31,7 +31,7 @@ const showWinner = (userWin, userChoice , compChoice)=>{
         msg.innerText = `You lost. ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
-}
+};
 
 const playGame = (userChoice) =>{
     //Generate computer choice
